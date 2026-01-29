@@ -49,6 +49,30 @@
   </a>
 </div>
 
+> [!WARNING]
+> ## ⚠️ Project Status: Deprecated
+> **Debrid Media Bridge (DMB)** is now deprecated.
+>
+> DMB may continue to function, but it is no longer under active development and will not receive new features or ongoing support.
+>
+> **➡️ The recommended successor is DUMB (Debrid Unlimited Media Bridge):**
+> - [DUMB Docs](https://dumbarr.com/)
+> - [DUMB Repo](https://github.com/I-am-PUID-0/DUMB)
+>
+> ### 📌 What DUMB Offers
+> DUMB is a consolidated media orchestration platform delivered as a single Docker image, with optional deployment of the following components:
+>
+> - **Integrated media servers**: Plex, Jellyfin, Emby
+> - **Arr ecosystem automation**: Sonarr, Radarr, Lidarr, Prowlarr, Huntarr, Whisparr
+> - **Debrid / Usenet workflow tooling**: CLI Debrid, Riven, Decypharr, NzbDAV
+> - **Storage and mount management**: rclone, Zurg
+> - **Database services and tooling**: PostgreSQL, pgAdmin, pgAgent
+> - **Service orchestration & operations**: process supervision, health checks, embedded UIs, automatic restarts, managed updates
+>
+> DUMB is actively maintained and supersedes DMB by consolidating service orchestration, automation, and operational control into a single, supported platform.
+
+
+
 
 > [!CAUTION]
 > Docker Desktop **CANNOT** be used to run DMB. Docker Desktop does not support the [mount propagation](https://docs.docker.com/storage/bind-mounts/#configure-bind-propagation) required for rclone mounts.
@@ -82,26 +106,6 @@
 | [Riven](https://github.com/rivenmedia/riven)                   | [Riven Media](https://github.com/rivenmedia)                             | [Discord](https://discord.gg/VtYd42mxgb) • [Discussions](https://github.com/orgs/rivenmedia/discussions)   | [Sponsor](https://github.com/sponsors/dreulavelle/)                                                   |
 | [Zilean](https://github.com/iPromKnight/zilean)                | [iPromKnight](https://github.com/iPromKnight)                            | [Docs](https://ipromknight.github.io/zilean/) • [Issues](https://github.com/iPromKnight/zilean/issues)     | —                                                                                                     |
 | [Zurg](https://github.com/debridmediamanager/zurg-testing)     | [yowmamasita](https://github.com/yowmamasita)                            | [Wiki](https://github.com/debridmediamanager/zurg-testing/wiki)                                            | [Sponsor](https://github.com/sponsors/debridmediamanager)                                             |
-
-
-## 🤩 Want the Media Server Built-In?
-
-**DMB does not include a Media Server within the image.**  
-This project is designed to manage and prepare media through debrid services, but assumes that you will run your media server (like Plex, Jellyfin, or Emby) separately.
-
-> [!TIP]
-> ### If you're looking for an **all-in-one solution** that includes a media server directly inside the container — fully integrated with Riven, Zurg, rclone, and more!?
-> 
-> ### Check out [**📦 DUMB (Debrid Unlimited Media Bridge)**](https://github.com/I-am-PUID-0/DUMB):
-
-
-⚙️ DUMB includes:
-* Plex Media Server preconfigured with mount support
-* Built-in support for Real-Debrid workflows
-* Single-container deployment for easier onboarding
-* Tight integration between media prep, serving, and metadata handling
-
-📦 [**View DUMB on GitHub **](https://github.com/I-am-PUID-0/DUMB)
 
 ## 🌟 Features
 
